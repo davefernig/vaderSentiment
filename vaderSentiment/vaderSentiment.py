@@ -193,7 +193,7 @@ class SentimentIntensityAnalyzer(object):
     Give a sentiment intensity score to sentences.
     """
     def __init__(self, lexicon):
-        self.lexicon = self.make_lex_dict()
+        self.lexicon = lexicon
 
     def polarity_scores(self, text):
         """
